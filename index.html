@@ -3,69 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link href="style.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
     <title>Document</title>
+    <script defer src="script.js"></script>
   </head>
-
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <body class="boddy">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
-                id="navbarDropdown"
+                id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Dropdown link
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
@@ -75,93 +103,48 @@
         </div>
       </div>
     </nav>
-
-    <div class="fade-box"></div>
-    <!-- <div class="container mb-2">
-      <h4 class="text-center mb-2">
+    <section>
+      <div class="fade-box"></div>
+      <div class="imgs">
+        <img src="/images/v-1.jpg" />
+        <img src="/images/v-2.jpg" />
+        <img src="/images/v-3.jpg" />
+        <img src="/images/v-4.jpg" />
+        <img src="images/v-5.jpg" />
+        <img src="images/v-6.jpg" />
+      </div>
+    </section>
+    <section class="container hidden imagebox mt-5">
+      <h4 class="text-center">
         At Longboard, innovation, sustainability, and quality are intertwined in
         architectural products to meet the expectations of your unparalleled
         designs.
       </h4>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima
-        quasi, cumque deleniti sit quisquam quibusdam maxime. Atque voluptas
-        obcaecati nam sint. Similique nam a, excepturi ut ipsum est ipsam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+        pariatur voluptate porro fugiat veniam, voluptates p necessitatibus
+        eveniet animi recusandae voluptatibus in ad blanditiis.
       </p>
-    </div>
-
-    <div class="container">
-      <!-- <h2>Bootstrap Cards Varation:</h2>
-      <h3>Same Aspect Ratio ―</h3> -->
-      <div class="row mb-5">
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="/images/t-1.png"
-              class="card-img-top car-1"
-              alt="..."
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
-            </div>
-          </div>
+      <p class="text mt-2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+        pariatur voluptate porro fugiat veniam, voluptates p necessitatibus
+        eveniet animi recusandae voluptatibus in ad blanditiis.
+      </p>
+    </section>
+    <section class="container hidden">
+      <div class="logs">
+        <div class="log">
+          <img src="images/p3.jpg" alt="" class="imagebox" />
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="/images/t-1.png"
-              class="card-img-top car-1"
-              alt="..."
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="/images/t-1.png" class="card-img-top car-1" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
-            </div>
-          </div>
+        <div class="log">
+          <img src="images/p2.jpg" alt="" class="imagebox" />
         </div>
       </div>
-      <!-- row -->
-      <h3>
-        Same height for image (Suitable for dynamic different size images) ―
-      </h3>
-    </div>
-    <div class="image-box">
-      <div>
-        <img src="/images//h-6.jpg" alt="home" class="images" />
-      </div>
-      <div>
-        <img src="/images/p3.jpg" alt="home picture" class="images" />
-      </div>
-    </div>
-
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
   </body>
 </html>
