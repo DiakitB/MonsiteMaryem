@@ -1,7 +1,7 @@
 .boddy {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #c2bdbd;
 }
 
 .fade-box {
@@ -46,7 +46,7 @@
   top: 100vh;
 }
 .section-text {
-  background-color: red;
+  background-color: #ffffff;
   width: 900px;
   height: 900px;
 }
@@ -64,8 +64,37 @@
 .imagebox {
   width: 100%;
   height: auto;
+  background-color: #ffffff;
 }
 .logs {
   display: flex;
   column-gap: 19px;
+}
+.logs {
+  display: flex;
+  column-gap: 10px;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.last-section {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-1 {
+  max-width: 100%;
+  background-color: black;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: orange;
+}
+.active {
+  color: red !important;
 }
