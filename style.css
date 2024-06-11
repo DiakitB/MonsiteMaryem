@@ -98,3 +98,7 @@
 .active {
   color: red !important;
 }
+.long-image {
+  max-width: 20%;
+  height: auto;
+}
