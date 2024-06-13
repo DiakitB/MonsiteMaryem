@@ -23,21 +23,27 @@
 @keyframes animate {
   0% {
     background-image: url(/images/v-2.jpg);
+    max-width: 100%;
   }
   20% {
     background-image: url(/images/v-3.jpg);
+    max-width: 100%;
   }
   40% {
     background-image: url(/images/v-4.jpg);
+    max-width: 100%;
   }
   60% {
     background-image: url(/images/v-5.jpg);
+    max-width: 100%;
   }
   80% {
     background-image: url(/images/v-6.jpg);
+    max-width: 100%;
   }
   100% {
     background-image: url(/images/v-1.jpg);
+    max-width: 100%;
   }
 }
 
@@ -101,4 +107,19 @@
 .long-image {
   max-width: 20%;
   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-fade {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .image-fade {
+    width: 100%;
+    height: auto;
+  }
 }
